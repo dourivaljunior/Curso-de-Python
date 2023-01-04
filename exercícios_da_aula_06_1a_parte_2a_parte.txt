@@ -1,0 +1,120 @@
+#EXERCÍCIO 01:
+
+L1=[]
+L2=[]
+def func(*args):
+    print(args) 
+    for num in args:
+        if num<5:
+            L1.append(num)
+        if num >=5:
+            L2.append(num)
+func(1,2,3,4,5,6,7,8,9,10)
+print(L1)
+print(L2)
+
+
+L=[1,2,3,4,5,6,7,8,9,10]
+print(list(filter(lambda x:x<5, L))) 
+print(list(filter(lambda x:x>=5, L)))
+
+#EXERCÍCIO 02:
+def func(x,y):
+    q=x//y
+    r=x%y
+    return print(q,r)
+func(9,4)
+
+q=lambda x,y: x//y
+r=lambda x,y: x%y
+print(q(9,4),r(9,4))
+
+#EXERCÍCIO 03:
+
+def imprima_menor_de_a_b(a,b): 
+  if a<b: 
+    print(a) 
+  elif a>b: 
+    print(b) 
+  else: 
+    print("Os números são iguais.") 
+imprima_menor_de_a_b(1,5) 
+imprima_menor_de_a_b(10,3) 
+imprima_menor_de_a_b(4,4)
+
+menor = lambda a,b: a if a < b else b 
+print(menor(10,5))
+
+
+
+#EXERCÍCIO 04:
+def soma(a, b, limite=10): 
+  if a + b > limite: 
+    return True 
+  else: 
+    return False 
+print(soma(1, 5))
+
+
+#EXERCÍCIO 05:
+
+def func(nota):
+    if(nota >= 90): 
+        print("A")
+    if(80<=nota<90):
+        print ("B") 
+    if(70<=nota<80):
+        print("C")
+    if(60<=nota<70): 
+        print("D") 
+    if(50<=nota<60): 
+        print("E")
+    if(nota <=60): 
+        print("F")
+func(63)
+
+
+
+
+#2a parte dos exercícios
+#EXERCÍCIO 01:
+linguagem= ['Python', 'JavaScript', 'HTML', 'java'] 
+linguagem_titled=list(map(lambda str: str.title(),linguagem))
+print(linguagem_titled)
+
+#EXERCÍCIO 02:
+lista = [1,2,3,4,5]
+lista_ao_cubo=list(map(lambda x:pow(x,3),lista))
+print(lista_ao_cubo)
+
+#EXERCÍCIO 03:
+peso=[65,75,85]
+altura=[1.65,1.75,1.90]
+imc=list(map(lambda peso,altura: round(peso/altura**2,1), peso,altura))
+print(imc)
+
+
+#EXERCÍCIO 04:
+celsius=[23.5,3.7,45,8] 
+fahrenheit=list(map(lambda c:round(c*(9/5)+32,1),celsius))
+print(fahrenheit)
+
+
+#EXERCÍCIO 05:
+L=[-3,-2,-1,0,1,2,3]
+pos=list(filter(lambda x:x>0,L))
+print(pos)
+neg=list(filter(lambda x:x<0,L))
+print(neg)
+
+#EXERCÍCIO 06:
+array = ["java", "python", "world", "html", "script", "filter", "reduce"]
+print(list (filter (lambda str: len(str)==6,array) ) )
+
+#EXERCÍCIO 07:
+L = ["python", "print", "power", "java", "filter", "map"]
+print( list ( filter( lambda str: str[0]=="p",L ) ) )
+
+
+
+
