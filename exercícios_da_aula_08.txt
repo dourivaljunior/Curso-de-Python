@@ -1,0 +1,66 @@
+class Empregado:
+  cont=0
+  def __init__(self, id):
+    self.id = id
+    Empregado.cont=Empregado.cont+1
+  def work(self):
+    print(f'Funcionário id {self.id} está trabalhando')
+   
+emp1 = Empregado(100)
+emp2 = Empregado(200)
+emp1.work(), emp2.work()
+print(f'O total de Funcionários trabalhando: {Empregado.cont}')
+
+
+class Person:
+  def __init__(self, _name, _age):
+    self.name = _name
+    self.age = _age
+   
+  def sayHi(self):
+    return print(f' { self.name }  ,  {self.age}')
+    
+p1 = Person('Bob', 25)
+p1.sayHi() 
+
+
+class Carro:
+ portas = 4
+ def __init__(self):
+  print("Carro criado")
+
+ def exibePortas(self):
+  return self.portas
+ 
+veloster = Carro()
+print("Numero de portas:",veloster.exibePortas())
+
+class Pessoa:
+    dados='Dados da pessoa:'
+    def __init__(self, nome, idade):
+        self.nome = nome
+        self.idade = idade     
+    def nome_idade(self):
+        return print(self.nome,self.idade)
+p1 = Pessoa('Ana', 25)
+print(Pessoa.dados)
+p1.nome_idade()
+
+
+
+class Empregado:
+    empCount = 0
+    def __init__(self, nome, salario):
+        self.nome = nome
+        self.salario = salario
+        Empregado.empCount = Empregado.empCount+1
+    def nome(self):
+        return self.nome 
+    def salario(self):        
+        return self.salario
+emp1 = Empregado("Ana", 2000)
+print(emp1.nome,emp1.salario) 
+emp2 = Empregado("Maria", 5000)
+print(emp2.nome,emp2.salario) 
+print ("Total Empregados %d" % Empregado.empCount)
+
