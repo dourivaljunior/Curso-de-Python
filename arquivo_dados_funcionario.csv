@@ -1,0 +1,12 @@
+nome,idade,peso,altura,data_nascimento,cidade,mat,sexo
+ana,23,56,156,20-05-2018,salvador,123,f
+pedro,25,86,166,20-06-2017,salvador,124,m
+paulo,28,76,176,20-07-2018,camacari,223,m
+david,21,107,167,20-08-2016,lauro,529,m
+pedro,23,92,162,20-09-2018,salvador,628,m
+maria,33,80,180,20-12-2017,lauro,723,f
+julia,33,85,175,20-11-2016,camacari,821,f
+carol,35,86,156,20-04-2019,lauro,927,f
+ricardo,33,78,158,20-05-2018,salvador,835,m
+joana,23,47,157,20-02-2017,salvador,553,f
+
